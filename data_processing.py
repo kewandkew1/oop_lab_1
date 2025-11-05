@@ -64,7 +64,8 @@ germany_temp = 0
 for i in cities:
     if i['country'] == "Germany":
         germany_temp += float(i['temperature'])
-print(germany_temp / len(germany_city))
+print(f"{germany_temp / len(germany_city):.2f}")
+print()
 
 # Print the max temperature for all the cities in Italy
 print("max temperature for all the cities in Italy")
