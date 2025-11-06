@@ -45,8 +45,7 @@ print()
 
 # Print the average temperature of all the cities
 print("The average temperature of all the cities:")
-temps = [float(city['temperature']) for city in cities]
-print(sum(temps)/len(temps))
+print(aggregate('temperature',avg_float,cities))
 print()
 
 # Print all cities in Germany
